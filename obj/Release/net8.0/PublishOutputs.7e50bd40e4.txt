@@ -1,0 +1,5 @@
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\publish\SumitPortfolio.exe
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\publish\SumitPortfolio.dll
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\publish\SumitPortfolio.deps.json
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\publish\SumitPortfolio.runtimeconfig.json
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\publish\SumitPortfolio.pdb
