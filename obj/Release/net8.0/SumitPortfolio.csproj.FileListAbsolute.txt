@@ -25,3 +25,16 @@ C:\Sumit Data\Project me\SumitPortfolio\obj\Release\net8.0\refint\SumitPortfolio
 C:\Sumit Data\Project me\SumitPortfolio\obj\Release\net8.0\SumitPortfolio.pdb
 C:\Sumit Data\Project me\SumitPortfolio\obj\Release\net8.0\SumitPortfolio.genruntimeconfig.cache
 C:\Sumit Data\Project me\SumitPortfolio\obj\Release\net8.0\ref\SumitPortfolio.dll
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\css\site.css
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\images\profile.png
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\js\footerParticles.js
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\js\site.js
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\css\bootstrap5.css
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\css\slick.css
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\css\slicktheme.css
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\js\bootstrap5.js
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\js\jquerymin.js
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\js\particle.js
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\js\slickcarousel.js
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\lib\js\three.js
+C:\Sumit Data\Project me\SumitPortfolio\bin\Release\net8.0\wwwroot\pdf\SumitShah_CV.pdf
