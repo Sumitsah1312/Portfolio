@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\images\\loaderimg.png",
+      "PackagePath": "staticwebassets\\images\\loaderimg.png"
+    },
+    {
       "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\images\\profile.png",
       "PackagePath": "staticwebassets\\images\\profile.png"
+    },
+    {
+      "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\js\\all.min.js"
     },
     {
       "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\js\\footerParticles.js",
@@ -15,6 +23,10 @@
     {
       "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\lib\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\css\\all.min.css"
     },
     {
       "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\lib\\css\\bootstrap5.css",
@@ -35,6 +47,14 @@
     {
       "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\lib\\js\\jquerymin.js",
       "PackagePath": "staticwebassets\\lib\\js\\jquerymin.js"
+    },
+    {
+      "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\lib\\js\\jqueryvalidate.js",
+      "PackagePath": "staticwebassets\\lib\\js\\jqueryvalidate.js"
+    },
+    {
+      "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\lib\\js\\jqueryvalidate_unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\js\\jqueryvalidate_unobtrusive.js"
     },
     {
       "Id": "C:\\Sumit Data\\Project me\\SumitPortfolio\\wwwroot\\lib\\js\\particle.js",

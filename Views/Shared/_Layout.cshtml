@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="~/lib/css/slick.css" />
     <link rel="stylesheet" href="~/lib/css/slicktheme.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/js/all.min.js"></script>
+    <link rel="stylesheet" href="~/lib/css/all.min.css" />
     @* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> *@
     @* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> *@
 
@@ -21,7 +23,9 @@
 
     <nav class="navbar navbar-expand-lg fixed-top classy-navbar">
         <div class="container">
-            <a class="navbar-brand" href="/">Sumit Shah</a>
+            <img src="~/images/loaderimg.png" href="/" alt="Loader" class="logo-img" style="height:50px;width: auto;
+    animation: none;" />
+            @* <a class="navbar-brand" href="/">Sumit Shah</a> *@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,6 +41,20 @@
         </div>
     </nav>
 
+    <!-- Loader Section -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="logo-container">
+                <img src="~/images/loaderimg.png" alt="Loader" class="logo-img" />
+                @* <img src="your-logo-path.png" alt="S Logo" class="logo-img" /> *@
+                <div class="logo-shadow"></div>
+            </div>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container-fluid " style="padding-top:80px;">
         @RenderBody()
@@ -49,30 +67,92 @@
 <footer id="siteFooter" class="framer-footer text-light">
     <div id="footerParticles" style="height:40px;"></div>
 
-    <div class="footer-content container text-center">
-        <h2 class="footer-title mb-3">Let's collaborate?</h2>
-        <p class="footer-subtitle mb-4">
-            I'm open for exciting opportunities — feel free to reach out!
-        </p>
-
-        <div class="footer-buttons mb-4">
-            <a href="/pdf/SumitShah_CV.pdf" class="btn-footer-outline mt-2 mb-2" download>Resume</a>
-            <a href="/Contact" class="btn-footer-solid mt-2 mb-2">Get In Touch</a>
+    <div
+        class="align-items-center container d-flex flex-column flex-lg-row flex-md-row footer-content gap-lg-5 gap-md-5 justify-content-between mx-0">
+        <!-- Left image/logo -->
+        <div class="footer-logo mb-3 mb-lg-0">
+            <img src="~/images/loaderimg.png" alt="Logo" class="footer-logo-img" />
         </div>
 
-        <p class="footer-crafted">
-            Crafted by <strong>Sumit Shah</strong> with ❤️
-        </p>
+        <!-- Right content -->
+        <div class="footer-text text-center text-lg-start">
+            <h2 class="footer-title mb-3">Let's collaborate?</h2>
+            <p class="footer-subtitle mb-4">
+                I'm open for exciting opportunities — feel free to reach out!
+            </p>
+
+            <div class="footer-buttons mb-4">
+                <a href="/pdf/SumitShah_CV.pdf" class="btn-footer-outline mt-2 mb-2" download>Resume</a>
+                <a href="/Contact" class="btn-footer-solid mt-2 mb-2">Get In Touch</a>
+            </div>
+
+            <p class="footer-crafted">
+                Crafted by <strong>Sumit Shah</strong> with ❤️
+            </p>
+
+            <div class="footer-social-icons mt-2">
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/your-profile" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.geeksforgeeks.org/your-profile" target="_blank" class="social-icon">
+                    <i class="fas fa-graduation-cap"></i> <!-- or a GFG logo image -->
+                </a>
+            </div>
+
+        </div>
     </div>
+</footer>
+</div>
 </footer>
 <!-- ✅ Correct JS order -->
 <script src="~/lib/js/jquerymin.js"></script> <!-- jQuery first -->
+<script src="~/lib/js/jqueryvalidate.js"></script> <!-- jQuery first -->
+<script src="~/lib/js/jqueryvalidate_unobtrusive.js"></script> <!-- jQuery first -->
+
 <script src="~/lib/js/bootstrap5.js"></script> <!-- then Bootstrap -->
 <script src="~/lib/js/slickcarousel.js"></script> <!-- then Slick Carousel -->
 <script src="~/lib/js/three.js"></script> <!-- then Three.js -->
 <script src="~/js/footerParticles.js"></script> <!-- depends on Three.js -->
 <script src="~/lib/js/particle.js"></script> <!-- optional, if it uses three -->
 <script src="~/js/site.js"></script> <!-- your custom scripts last -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const loader = document.getElementById("loader");
+        const mainContent = document.getElementById("main-content");
+
+        // Check if first visit
+        const isFirstVisit = !localStorage.getItem("firstVisitDone");
+
+        if (isFirstVisit) {
+            // First visit: show loader for 4 seconds
+            setTimeout(() => {
+                loader.classList.add("fade-out");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                    mainContent.style.display = "block";
+                }, 1000); // fade-out duration
+            }, 4000);
+
+            // Mark that first visit has happened
+            localStorage.setItem("firstVisitDone", "true");
+        } else {
+            // Not first visit: hide loader as soon as page is ready
+            window.addEventListener("load", () => {
+                loader.classList.add("fade-out");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                    mainContent.style.display = "block";
+                }, 1000); // fade-out duration
+            });
+        }
+    });
+
+</script>
+
 
 @* <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> *@
 @* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> *@

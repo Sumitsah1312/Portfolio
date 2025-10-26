@@ -1,28 +1,43 @@
+@model SumitPortfolio.Models.ConnectForm
 @{
     ViewData["Title"] = "Contact";
-     Layout = "~/views/Shared/_Layout.cshtml";
+    Layout = "~/views/Shared/_Layout.cshtml";
 }
+
 <div class="page-section container pt-5 mt-5">
-    <h2>Contact</h2>
+    <form method="post" asp-action="ConnectMessage" class="contact-form glassy-card p-4 mx-auto mb-4">
+        <h3 class="form-title mb-4 text-center text-glow">Connect With Me</h3>
 
-    @if(ViewBag.Message != null)
-    {
-        <div class="alert alert-success">@ViewBag.Message</div>
-    }
-
-    <form method="post" action="/Contact">
         <div class="mb-3">
-            <label class="form-label">Name</label>
-            <input name="name" class="form-control" />
+            <label class="form-label">First Name</label>
+            <input asp-for="FirstName" class="form-control classy-input" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
         </div>
+
+        <div class="mb-3">
+            <label class="form-label">Last Name</label>
+            <input asp-for="LastName" class="form-control classy-input" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mobile No.</label>
+            <input asp-for="Mobile" class="form-control classy-input" />
+            <span asp-validation-for="Mobile" class="text-danger"></span>
+        </div>
+
         <div class="mb-3">
             <label class="form-label">Email</label>
-            <input name="email" class="form-control" />
+            <input asp-for="Email" class="form-control classy-input"  />
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
+
         <div class="mb-3">
             <label class="form-label">Message</label>
-            <textarea name="message" class="form-control" rows="4"></textarea>
+            <textarea asp-for="Message" class="form-control classy-input" rows="4"
+                placeholder="Type your message..."></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
         </div>
-        <button class="btn btn-primary" type="submit">Send Message</button>
+
+        <button class="btn btn-glow w-100 mt-3" type="submit">Send Message</button>
     </form>
 </div>
+
